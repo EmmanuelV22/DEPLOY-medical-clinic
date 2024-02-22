@@ -25,7 +25,15 @@ const AllAppointments = () => {
     await actions.getAllPatients();
   };
 
-  const combinedData = store.allAppointments.map((appointment) => {
+  const currentDate = new Date();
+  const filteredAppointments = store.allAppointments.filter((appointment) => {
+    const appointmentDate = new Date(
+      `${appointment.year}-${appointment.month}-${appointment.date} ${appointment.time}`
+    );
+    return appointmentDate >= currentDate;
+  });
+
+  const combinedData = filteredAppointments.map((appointment) => {
     const employee = store.employees.find(
       (emp) => emp.id === appointment.medical_id
     );
