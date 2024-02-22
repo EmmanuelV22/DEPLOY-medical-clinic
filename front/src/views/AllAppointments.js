@@ -84,7 +84,7 @@ const AllAppointments = () => {
 
           <div className="mb-5" style={{ margin: "0 auto" }}>
             {combinedData?.length > 0 ? (
-              <table className="table table-sm">
+              <table className="table table-sm table-appointment">
                 <thead>
                   <tr>
                     <th className="table-name">Nombre paciente</th>
