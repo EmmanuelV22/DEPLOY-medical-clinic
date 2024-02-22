@@ -157,7 +157,7 @@ const AdminAllEmployees = () => {
           </td>
 
           <td className="table-actionDr-sorting text-center d-flex justitfy-content-center align-items-center">
-            <button
+           {employee.specialist === "admin" ? <h5>admin</h5> : <> <button
               title="ver y editar datos"
               className="btn-edit"
               style={{
@@ -220,7 +220,7 @@ const AdminAllEmployees = () => {
                   </clipPath>
                 </defs>
               </svg>
-            </button>
+            </button> </>}
           </td>
         </tr>
         <EmployeeDetail employeeData={employee} />
