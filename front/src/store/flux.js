@@ -7,14 +7,9 @@ const config = {
   },
 };
 
-// const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
-// el front no esta leyendo las .env , local host y backend estan bien configurados y funciona
-
-
-
 const getState = ({ getStore, getActions, setStore }) => {
 
-  const BACKEND_URL = "https://medical-clinic-app.onrender.com";
+  const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:5000";
 
   const API_AUTH = `${BACKEND_URL}/api/auth`;
   const API = `${BACKEND_URL}/api`;
