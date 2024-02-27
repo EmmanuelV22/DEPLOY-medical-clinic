@@ -22,7 +22,7 @@ const DashboardDoctor = () => {
           <Navbar />
           <div className="mt-4">
             <h1 className="text-center">
-              {store.employee?.sex === "h" ? "Bienvenido" : "Bienvenida"}{" "}
+              {store.employee?.sex.toLowerCase() === "h" ? "Bienvenido" : "Bienvenida"}{" "}
               {store.employee?.firstname} {store.employee?.lastname}
             </h1>
             <div className="content-cards d-flex justify-content-evenly px-4 mt-4 flex-wrap gap-4 mb-5">
