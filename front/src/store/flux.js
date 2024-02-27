@@ -9,7 +9,7 @@ const config = {
 
 const getState = ({ getStore, getActions, setStore }) => {
 
-  const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:5000";
+  const BACKEND_URL = "https://medical-clinic-app.onrender.com";
 
   const API_AUTH = `${BACKEND_URL}/api/auth`;
   const API = `${BACKEND_URL}/api`;
