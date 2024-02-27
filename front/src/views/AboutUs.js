@@ -28,7 +28,7 @@ const AboutUs = () => {
           desarrollada para facilitar las conexiones y gestion de informacion
           entre los pacientes y el personal medico de la clinica.<br></br> Su
           sistema se basa en lenguaje HTML + CSS + React combinando con una rest
-          API basada en NodeJS de Javascript y una base de datos MySQL.<br></br>
+          API basada en NodeJS de Javascript y una base de datos SQL de postgre.<br></br>
           <br></br>
           <h5>Proporciona herramientas para el paciente tales como:</h5>
           <br></br>-Programacion y gestion de citas medicas

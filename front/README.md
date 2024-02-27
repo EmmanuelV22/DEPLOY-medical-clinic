@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Clinic'app
+![Medical clinic'app](https://i.ibb.co/BPfRjjk/Cli-NIC-APP.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicacion web desarrollada para gestion de datos de pacientes y funcionarios de una clinica privada.
 
-## Available Scripts
+## Tabla de contenidos
 
-In the project directory, you can run:
+- [Descripcion](#descripcion)
+- [Tecnologias](#tecnologias)
+- [Caracteristicas](#caracteristicas)
+- [Capturas](#capturas)
+- [Desarrolladores](#Desarrolladores)
 
-### `npm start`
+## Descripcion
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clinic'app es una app web desarrollada para facilitar las conexiones y gestion de informacion entre los pacientes y el personal medico de la clinica (tales como agenda o historia clinica: [Ver Caracteristicas](#caracteristicas)).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Su sistema se basa en lenguaje HTML + CSS + React combinando con una rest API basada en NodeJS de Javascript y una base de datos SQL de postgre.
 
-### `npm test`
+## Tecnologias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- React
+- JavaScript
+- NodeJS
+- Bootstrap
+- PostgreSQL
 
-### `npm run build`
+## Caracteristicas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Proporciona herramientas para el paciente tales como:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Programacion y gestion de citas medicas
+- Lectura de historia clinica
+- Seguimiento de tratamientos
+- Ubicacion via google maps
+- Notificaciones y cambio de contraseña via mail
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Del lado del profesional de la salud cuenta con:
 
-### `npm run eject`
+- Gestion de pacientes
+- Gestion de citas medicas propias
+- Creacion y modificacion de tratamientos
+- Registros en la historia clinica del paciente
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### El administrador puede:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Crear nuevos usuarios
+- Editar informacion de usuarios
+- Reservar turno a pacientes
+- Consultar listados de usuarios y de citas medicas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Puedes utilizar nuestra version demo aqui !
 
-## Learn More
+[Medical Clinic'app](https://medical-clinic-app.vercel.app/) <--- click aqui
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Creamos un usuario admin para que puedas probar sus funcionalidades:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- PersonalID: admin
+- Password: admin
 
-### Code Splitting
+### Tambien creamos un usuario paciente para ti:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- DNI: 0123
+- Password: paciente
 
-### Analyzing the Bundle Size
+### Y un usuario medico con todas sus opciones:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- PersonalID: DOC1234
+- Password: doctor
 
-### Making a Progressive Web App
+## Capturas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Login
 
-### Advanced Configuration
+![LOGIN](https://i.ibb.co/sKScfKs/Login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Panel del admin
 
-### Deployment
+![ADMIN](https://i.ibb.co/px8ccsr/panel-admin.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Panel del doctor
 
-### `npm run build` fails to minify
+![DOCTOR](https://i.ibb.co/6RtG0F7/panel-doc.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Panel del paciente
+
+![PACIENTE](https://i.ibb.co/w6QrWZr/panel-paciente.png)
+
+### Funcionalidad de agenda
+
+![AGENDA](https://i.ibb.co/phdTvBD/calendario.png)
+
+
+## Desarrolladores
+
+- [Valentin Robert](https://github.com/ValentinFrAr)
+- [Emmanuel Vargas](https://github.com/EmmanuelV22)
+
