@@ -7,7 +7,6 @@ import es from "date-fns/locale/es";
 import { Context } from "../store/appContext";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
-// import '../styles/datepicker.scss';
 const AppointmentScheduler = ({ doctorId, daysOff, startTime, endTime }) => {
   const { patient_id_params } = useParams();
   const { actions, store } = useContext(Context);
@@ -17,6 +16,23 @@ const AppointmentScheduler = ({ doctorId, daysOff, startTime, endTime }) => {
   const [arrayDeExcludesForSelected, setArrayDeExcludesForSelected] = useState(
     []
   );
+  const minTime = new Date();
+  const maxTime = new Date();
+  const [hours, minutes] = startTime.split(":").map(Number);
+  const [hoursEnd, minutesEnd] = endTime.split(":").map(Number);
+
+  if (startTime.length > 3) {
+    minTime.setHours(hours, minutes, 0, 0);
+  } else {
+    minTime.setHours(startTime, 0, 0, 0)
+  }
+
+  if (endTime.length > 3) {
+    maxTime.setHours(hoursEnd, minutesEnd, 0, 0);
+  } else {
+    maxTime.setHours(endTime, 0, 0, 0)
+  }
+
   const disabledDates = [];
   let navigate = useNavigate();
 
@@ -145,8 +161,8 @@ const AppointmentScheduler = ({ doctorId, daysOff, startTime, endTime }) => {
           timeCaption="horarios"
           showTimeSelect
           dateFormat="Pp"
-          minTime={new Date().setHours(startTime, 0, 0, 0)}
-          maxTime={new Date().setHours(endTime, 0, 0, 0)}
+          minTime={minTime}
+          maxTime={maxTime}
           excludeTimes={arrayDeExcludesForSelected}
           excludeDates={disabledDates}
         />
